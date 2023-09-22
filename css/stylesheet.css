@@ -838,7 +838,7 @@ footer nav ul li {
     padding: 10px 15px;
   }
   footer nav ul li {
-    font-size: 12px;
+    font-size: 20px;
   }
   .copyright p {
     font-size: 10px;
@@ -866,69 +866,26 @@ footer nav ul li {
   }
 }
 @media all and (max-width: 450px) {
-  p{
+   p{
     font-size: 20px;
   }
-  .form-holder form .input-group .le-input {
-    border-radius: 5px;
-    width: 90%;
-    max-width: 100%;
-    margin: 0;
-  }
-  .form-holder form .input-group-addon {
-    display: block;
-  }
-  .form-holder form .input-group-addon .le-btn {
-    display: block;
-    border-radius: 5px;
-    width: 60%;
-    margin: 10px auto 0;
-  }
+  
   .social-icons {
-    position: relative;
+    /* position: relative; */
     left: 0;
     right: 0;
     width: 100%;
     text-align: center;
     margin: auto;
   }
-  footer {
-    position: bottom;
-    margin: 20px 0 ;
-  }
-  .page {
-    top: 0;
-    width: 90%;
-    position: relative;
-    display: none;
-  }
-  .page,
-  .page.active {
-    -webkit-transform: translate(0px, 0px);
-    -moz-transform: translate(0px, 0px);
-    -o-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
-  }
-  .page.active {
-    display: block;
-  }
-  form .input-group-addon .le-btn {
-    width: 50px;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 11px;
-    margin-left: 0px;
-  }
-  form .input-group .le-input {
-    display: block;
-    max-width: 170px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 5px;
-  }
+ 
+  .nav__close{
+
+    top: 4.5%;
+    right: 14.5%;
+
+  } 
+  
   #coundown-holder {
     position: bottom;
 
@@ -942,6 +899,10 @@ footer nav ul li {
     text-align: center;
     margin: 10px 0;
     width: 100%;
+  } 
+
+  footer nav ul li {
+    font-size: 25px;
   }
 }
 /*Browsers Hacks*/
@@ -993,38 +954,30 @@ footer nav ul li {
     border-radius: 1rem 0 0 1rem;
     transition:  .3s; 
     z-index: 1; 
+  }
 
-}
+  .nav__menu ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 15px;
+  }
 
-.nav__menu ul{
-  display: flex;
-  flex-direction: column;
-}
+  .nav__toggle
+  {
+    display: inline-flex !important;
+    font-style: 1.25rem;
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 125%;
+    z-index: 10;
+  }
 
-.nav__toggle
-{
-  display: inline-flex !important;
-  font-style: 1.25rem;
-  cursor: pointer;
-  position: absolute;
-  top: 5%;
-  right: 125%;
-  z-index: 10;
-}
+  .show-menu.nav__menu .nav__close{
+    display: inline-flex !important;
 
-
-
-
-
-
-.show-menu.nav__menu .nav__close{
-  display: inline-flex !important;
-
-}
-
-
- 
-  
+  } 
 }
 .nav__toggle,
 .nav__close{

@@ -11,3 +11,14 @@ navToggle.addEventListener('click', () => {
 navClose.addEventListener('click', () => {
     navMenu.classList.remove('show-menu')
 })
+
+
+
+const navLinks = document.querySelectorAll('.nav__link');
+navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', linkAction)
+})
+
+function linkAction() {
+    navMenu.classList.remove('show-menu')
+}
